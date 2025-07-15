@@ -77,6 +77,7 @@ def predict_view(request):
 
         acc, error = model_instance.perceptron(x, y)
 
+<<<<<<< HEAD
         preds = [model_instance.pred(row)[0] for row in x]
 
         predictions = []
@@ -91,6 +92,14 @@ def predict_view(request):
         stay_acc = matrix[0][0]
         leave_acc= matrix[1][1]
 
+=======
+        preds = [round(model_instance.pred(row)[0]) for row in x]
+        matrix = model_instance.confusion_matrix(preds, y.reshape(-1).tolist()).values.tolist()
+        tn, fp = matrix[0]
+        fn, tp = matrix[1]
+        leave_acc = tp / (tp + fn) if (tp + fn) > 0 else 1
+        stay_acc = tn / (tn + fp) if (tn + fp) > 0 else 1
+>>>>>>> 9db48ff01881fc7dced27e50501f42d2fe8f55f8
 
         chance = (
             "low" if prediction <= 0.20 else

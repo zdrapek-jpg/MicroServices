@@ -26,10 +26,7 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 9db48ff01881fc7dced27e50501f42d2fe8f55f8
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

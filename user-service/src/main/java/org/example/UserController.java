@@ -1,13 +1,23 @@
 package org.example;
 
 
+<<<<<<< HEAD
 import org.springframework.web.bind.annotation.*;
+=======
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+>>>>>>> 9db48ff01881fc7dced27e50501f42d2fe8f55f8
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+<<<<<<< HEAD
 import java.util.concurrent.atomic.AtomicInteger;
+=======
+>>>>>>> 9db48ff01881fc7dced27e50501f42d2fe8f55f8
 
 /**
  * REST Controller for managing user-related operations.
@@ -20,7 +30,10 @@ public class UserController {
     // In-memory data store for demonstration purposes.
     // In a real application, this would be a database or another data source.
     private final Map<Integer, User> users = new ConcurrentHashMap<>();
+<<<<<<< HEAD
     private final AtomicInteger idCounter = new AtomicInteger();
+=======
+>>>>>>> 9db48ff01881fc7dced27e50501f42d2fe8f55f8
 
     /**
      * Constructor to initialize some dummy user data.
@@ -53,6 +66,7 @@ public class UserController {
         System.out.println("Fetching user with ID: " + id);
         return users.get(id);
     }
+<<<<<<< HEAD
     @PostMapping("/add")
     public User addUser(@RequestBody User user) {
         int newId = idCounter.incrementAndGet();
@@ -61,12 +75,17 @@ public class UserController {
         System.out.println("Added new user: " + user.getName() + " with ID: " + newId);
         return user;
     }
+=======
+>>>>>>> 9db48ff01881fc7dced27e50501f42d2fe8f55f8
 
     /**
      * Simple inner class representing a User.
      * In a real application, this would be a separate POJO (Plain Old Java Object) or Entity.
      */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9db48ff01881fc7dced27e50501f42d2fe8f55f8
     public static class User {
         private Integer id;
         private String name;

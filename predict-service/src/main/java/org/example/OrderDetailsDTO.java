@@ -1,14 +1,20 @@
 package org.example;
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9db48ff01881fc7dced27e50501f42d2fe8f55f8
 /**
  * DTO to mirror the OrderWithUser object from OrderService, used for deserialization
  * within PredictionService. This includes the nested UserDetailsDTO.
  */
 public class OrderDetailsDTO {
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 9db48ff01881fc7dced27e50501f42d2fe8f55f8
     private Integer id;
     private Integer userId;
     private String product;

@@ -31,7 +31,10 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9db48ff01881fc7dced27e50501f42d2fe8f55f8
     </dependencies>
 
     <build>
